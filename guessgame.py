@@ -6,7 +6,6 @@ st.write("I will think of a number between range of 1-100. Try to guess it corre
 
 if 'computer_guess' not in st.session_state:
      st.session_state.computer_guess = random.randint(1, 100)
-     st.write(st.session_state.computer_guess)  
 
 def guess():
     user_guess = st.number_input("Enter your guess: ")
